@@ -145,3 +145,93 @@ _Hola_ <!--Cursiva-->
 ```
 
 ## 5. Conceptos y Elementos Principales de HTML
+
+* Es el lenguaje estándar para páginas web y define las estructuras y el contenido mediante etiquetas. Todas las páginas web están construidas en base a etiquetas (**Markup**).
+
+* Estructura básica de un html:
+
+    ```
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Mi Página</title>
+    </head>
+    <body>
+        <h1>Bienvenido a mi página</h1>
+        <p>Este es un párrafo.</p>
+    </body>
+    </html>
+    ```
+* Cada contenido va entre comillas de inicio **<>** y de cierre **</>**.
+
+* Los atributos contienen información adicional acerca del elemento. Se definen justo a continuación del elemento, separado con un espacio y dentro de la etiqueta de inicio.
+
+* __DOCTYPE__ es un elemento que se sitúa al inicio del documento y que define el tipo del documento. Va acompañado de un **html** y el documento finaliza con otro **html**.
+
+* Elementos principales: 
+    * Estructura ->
+        * <html>: Raíz del documento.
+        * <head>: Contiene metadatos y enlaces a hojas de estilo o scripts.
+        * <body>: Contenido visible de la página.
+
+    * Texto ->
+        * <h1> a <h6>: Títulos (de mayor a menor importancia).
+        * <p>: Párrafos.
+        * <b>: Texto en negrita.
+        * <i>: Texto en cursiva.
+
+    * Atributos de html ->
+        * __meta__: añade metainformación a la página.
+        * __charset__: denota la codificación de caracteres.
+        * __title__: descripción del titulo de la etiqueta del navegador.
+        * __keywords__: descripción de la página en los resultados de búsqueda.
+
+    * Enlaces e imagenes ->
+        * <a href="URL">Texto del enlace</a>: Enlaces.
+        * <img src="URL" alt="Descripción de la imagen">: Imágenes.
+
+    * Listas ->
+        * <ul>: Lista no ordenada (con puntos).
+        * <ol>: Lista ordenada (con números).
+        * <li>: Elemento de lista.
+    
+    * Formularios ->
+        ```
+        <form action="ejemplo.php" method="get">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre">
+            <input type="submit" value="Enviar">
+        </form>
+        ```
+* Los formularios nos sirven para interactuar con el usuario y que este pueda transmitir información. 
+
+* Contenido de los formularios ->
+    * campos de texto
+    * campos de contraseña
+    * botones de opción
+    * casilla de verificación
+    * campos para introducir archivos
+    * listas de selección
+    * areas de texto
+    * botones
+
+* Elementos de los formularios ->
+    * <input> ->entrada de datos
+    * <type> -> forma en la que se comporta el campo
+    * <name> -> nombre del campo de entrada
+    * <email> ->formato email
+    * <reset> -> resetea todo el campo para dejarlo vacío
+    * <submit> -> envía datos
+    * <value> -> valor de la variable
+    * <required> -> campo obligatorio
+    * <placeholder> -> texto indicativo
+    * <disable> ->desactivar campo
+    * <readonly> -> campo de solo lectura
+    * <textarea> ->espacio de rellenar
+        * <cols> ->ancho
+        * <row> ->alto
+    * <select> -> elegir una opción
+        * <options> -> definir opciones
+
+
+
