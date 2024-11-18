@@ -170,15 +170,36 @@ _Hola_ <!--Cursiva-->
 
 * Elementos principales: 
     * Estructura ->
-        * <html>: Raíz del documento.
-        * <head>: Contiene metadatos y enlaces a hojas de estilo o scripts.
-        * <body>: Contenido visible de la página.
+        * Raíz del documento.
+        ```
+        <html>
+        ```
+        * Contiene metadatos y enlaces a hojas de estilo o scripts.
+        ```
+        <head> 
+        ```
+        * Contenido visible de la página.
+        ```
+        <body>
+        ```
 
     * Texto ->
-        * <h1> a <h6>: Títulos (de mayor a menor importancia).
-        * <p>: Párrafos.
-        * <b>: Texto en negrita.
-        * <i>: Texto en cursiva.
+        * Títulos (de mayor a menor importancia).
+        ```
+        <h1> a <h6> 
+        ```
+        * Párrafos
+        ```
+        <p>
+        ```
+        * Texto en negrita.
+        ```
+        <b>
+        ```
+        * Texto en cursiva
+        ```
+        <i>
+        ```
 
     * Atributos de html ->
         * __meta__: añade metainformación a la página.
@@ -187,13 +208,28 @@ _Hola_ <!--Cursiva-->
         * __keywords__: descripción de la página en los resultados de búsqueda.
 
     * Enlaces e imagenes ->
-        * <a href="URL">Texto del enlace</a>: Enlaces.
-        * <img src="URL" alt="Descripción de la imagen">: Imágenes.
+        * Enlaces
+        ```
+        <a href="URL">Texto del enlace</a>
+        ```
+        * Imágenes
+        ```
+        <img src="URL" alt="Descripción de la imagen">
+        ```
 
     * Listas ->
-        * <ul>: Lista no ordenada (con puntos).
-        * <ol>: Lista ordenada (con números).
-        * <li>: Elemento de lista.
+        * Lista no ordenada (con puntos)
+        ```
+        <ul>
+        ```
+        * Lista ordenada (con números)
+        ```
+        <ol>
+        ```
+        * Elemento de lista
+        ```
+        <li>
+        ```
     
     * Formularios ->
         ```
