@@ -273,14 +273,14 @@ _Hola_ <!--Cursiva-->
 * **CSS** sirve para dar instrucciones al naveador para representar elementos de la web.
 No es ni un lenguage de programación ni de marcas.
 
-Las ventajas que trae el uso de CSS són:
+* Las ventajas que trae el uso de CSS són:
 
-* Crea un código eficiente y és más fácil de trabajar
-* Ofrece mayor capacidad de diseño
-* Se pueden definir diferentes hojas de estilo en un solo documento
-* Es reutilizable
+  * Crea un código eficiente y és más fácil de trabajar
+  * Ofrece mayor capacidad de diseño
+  * Se pueden definir diferentes hojas de estilo en un solo documento
+  * Es reutilizable
 
-Las hojas de estilo se hubican en la propia etiqueta (_inline_), en la cabecera del HTML (_interno_) o en otro fichero (_externo_).
+* Las hojas de estilo se hubican en la propia etiqueta (_inline_), en la cabecera del HTML (_interno_) o en otro fichero (_externo_).
 
 * **INLINE**
 ```
@@ -340,4 +340,4 @@ h2 {
     color:blue
 }
 ```
-De esta forma aplicamos CSS tanto de forma _interna_ como _externa_.
+* De esta forma aplicamos CSS tanto de forma _interna_ como _externa_.
