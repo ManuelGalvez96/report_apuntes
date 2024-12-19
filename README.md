@@ -269,5 +269,75 @@ _Hola_ <!--Cursiva-->
     * <select> -> elegir una opción
         * <options> -> definir opciones
 
+## 6. Conceptos de CSS
+* **CSS** sirve para dar instrucciones al naveador para representar elementos de la web.
+No es ni un lenguage de programación ni de marcas.
 
+Las ventajas que trae el uso de CSS són:
 
+* Crea un código eficiente y és más fácil de trabajar
+* Ofrece mayor capacidad de diseño
+* Se pueden definir diferentes hojas de estilo en un solo documento
+* Es reutilizable
+
+Las hojas de estilo se hubican en la propia etiqueta (_inline_), en la cabecera del HTML (_interno_) o en otro fichero (_externo_).
+
+* **INLINE**
+```
+<p style="text-align:center; color:red">Paragrafo rojo</p>
+```
+
+* **INTERNO**
+```
+<head>
+   <style>
+    p {
+        text-align:center; 
+        color:red;
+    }
+    </style>
+</head>
+```
+
+* **EXTERNO**
+```
+<link rel ="stylesheet" href="estilo.css" type="text/css" />
+
+ p {
+    text-align:center; 
+    color:red;
+}
+```
+
+* Ejemplo CSS:
+
+```
+<!DOCTYPE html>
+    <html>
+    <head>
+        <title>Mi Página</title>
+        <link rel ="stylesheet" href="estilo.css" type="text/css" />
+        <style>
+            p{
+                font-size: italic;
+                color:green;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <h1 style="color:red">Bienvenido a mi página</h1>
+
+        <h2>Titulo secundario 1</h2>
+        <p>Primer parrafo</p>
+        <h2>Titulo secundario 2</h2>
+        <p>Segundo parrafo</p>
+    </body>
+    </html>
+```
+```
+h2 { 
+    color:blue
+}
+```
+De esta forma aplicamos CSS tanto de forma _interna_ como _externa_.
