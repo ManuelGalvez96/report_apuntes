@@ -270,8 +270,11 @@ _Hola_ <!--Cursiva-->
         * <options> -> definir opciones
 
 ## 6. Conceptos de CSS
+1. ¿Que es CSS?
+   
 * **CSS** sirve para dar instrucciones al naveador para representar elementos de la web.
-No es ni un lenguage de programación ni de marcas.
+  
+* No es ni un lenguage de programación ni de marcas.
 
 * Las ventajas que trae el uso de CSS són:
 
@@ -279,7 +282,9 @@ No es ni un lenguage de programación ni de marcas.
   * Ofrece mayor capacidad de diseño
   * Se pueden definir diferentes hojas de estilo en un solo documento
   * Es reutilizable
-
+  
+1. Integrar CSS
+   
 * Las hojas de estilo se hubican en la propia etiqueta (_inline_), en la cabecera del HTML (_interno_) o en otro fichero (_externo_).
 
 * **INLINE**
@@ -341,3 +346,35 @@ h2 {
 }
 ```
 * De esta forma aplicamos CSS tanto de forma _interna_ como _externa_.
+
+* La prioridad que sigue el estilo CSS es la siguiente:
+
+  1. definicion de estilo CSS en etiqueta
+  2. definicion de estilo CSS en **HEAD**
+  3. archivo CSS
+ 
+* Cuanto más cerca este la definicion CSS del codigo mayor prioridad tiene.
+
+* Dentro del mismo nivel de prioridad tenemos niveles de **especifilidad** que prioriza elementos más especificos a otros como sería el caso de las **ID**. Tanmién cuenta el **orden del código** o **reglas importantes** (__!important__).
+  
+* Los **selectores** nos sirven para definir que elemento 
+
+* Tipos de Selectores:
+
+    * selector de id
+        *
+        ```
+        <h1 id="titulo">
+        ``` 
+    * selector de clase
+        * Identifica de forma inequivoca a un elemento aplicandole un valor especifico.
+        ```
+        <p class= "example">
+        ```
+    * selecotor de elementos
+        * 
+        ```
+        ```
+* 
+ 
+
