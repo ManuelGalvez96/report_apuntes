@@ -269,112 +269,115 @@ _Hola_ <!--Cursiva-->
     * <select> -> elegir una opción
         * <options> -> definir opciones
 
-## 6. Conceptos de CSS
-1. ¿Que es CSS?
-   
-* **CSS** sirve para dar instrucciones al naveador para representar elementos de la web.
-  
-* No es ni un lenguage de programación ni de marcas.
+Permite aplicar estilos visuales a los elementos HTML.
 
-* Las ventajas que trae el uso de CSS són:
+### Sintaxis Básica
 
-  * Crea un código eficiente y és más fácil de trabajar
-  * Ofrece mayor capacidad de diseño
-  * Se pueden definir diferentes hojas de estilo en un solo documento
-  * Es reutilizable
-  
-1. Integrar CSS
-   
-* Las hojas de estilo se hubican en la propia etiqueta (_inline_), en la cabecera del HTML (_interno_) o en otro fichero (_externo_).
-
-* **INLINE**
-```
-<p style="text-align:center; color:red">Paragrafo rojo</p>
-```
-
-* **INTERNO**
-```
-<head>
-   <style>
-    p {
-        text-align:center; 
-        color:red;
-    }
-    </style>
-</head>
-```
-
-* **EXTERNO**
-```
-<link rel ="stylesheet" href="estilo.css" type="text/css" />
-
- p {
-    text-align:center; 
-    color:red;
+```css
+selector {
+  propiedad: valor;
 }
 ```
 
-* Ejemplo CSS:
+### Ejemplo
 
-```
-<!DOCTYPE html>
-    <html>
-    <head>
-        <title>Mi Página</title>
-        <link rel ="stylesheet" href="estilo.css" type="text/css" />
-        <style>
-            p{
-                font-size: italic;
-                color:green;
-            }
-            
-        </style>
-    </head>
-    <body>
-        <h1 style="color:red">Bienvenido a mi página</h1>
+```css
+body {
+  font-family: Arial;
+  background-color: #f4f4f4;
+}
 
-        <h2>Titulo secundario 1</h2>
-        <p>Primer parrafo</p>
-        <h2>Titulo secundario 2</h2>
-        <p>Segundo parrafo</p>
-    </body>
-    </html>
-```
-```
-h2 { 
-    color:blue
+input[type="text"] {
+  border: 1px solid #ccc;
+  padding: 8px;
 }
 ```
-* De esta forma aplicamos CSS tanto de forma _interna_ como _externa_.
 
-* La prioridad que sigue el estilo CSS es la siguiente:
+### Selectores útiles
 
-  1. definicion de estilo CSS en etiqueta
-  2. definicion de estilo CSS en **HEAD**
-  3. archivo CSS
- 
-* Cuanto más cerca este la definicion CSS del codigo mayor prioridad tiene.
+- `#id` — selecciona por ID
+- `.clase` — selecciona por clase
+- `elemento` — selecciona por etiqueta
+- `div > p` — hijo directo
+- `a:hover` — pseudoclase
 
-* Dentro del mismo nivel de prioridad tenemos niveles de **especifilidad** que prioriza elementos más especificos a otros como sería el caso de las **ID**. Tanmién cuenta el **orden del código** o **reglas importantes** (__!important__).
-  
-* Los **selectores** nos sirven para definir que elemento 
+### Aplicación del CSS
 
-* Tipos de Selectores:
+- **Inline**: `<p style="color:red">Texto</p>`
+- **Interno**: dentro de `<style>` en HTML
+- **Externo**: enlazado con `<link rel="stylesheet" href="estilos.css">`
 
-    * selector de id
-        *
-        ```
-        <h1 id="titulo">
-        ``` 
-    * selector de clase
-        * Identifica de forma inequivoca a un elemento aplicandole un valor especifico.
-        ```
-        <p class= "example">
-        ```
-    * selecotor de elementos
-        * 
-        ```
-        ```
-* 
- 
+---
 
+## Diseño Responsive
+
+Hace que el diseño se adapte a diferentes dispositivos y tamaños de pantalla.
+
+### Recomendaciones
+
+- Usa **unidades relativas**: `%`, `em`, `rem`
+- Aplica **media queries** para adaptar estilos
+- Usa diseño flexible con **Flexbox** o **Grid**
+
+### Ejemplo con Media Query
+
+```css
+/* Estilo base */
+body {
+  font-size: 16px;
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .menu {
+    display: none;
+  }
+}
+```
+
+### Ejemplo con Flexbox
+
+```css
+.contenedor {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+```
+
+---
+
+## Sesiones en Aplicaciones Web
+
+Las sesiones permiten guardar información del usuario entre páginas o durante su visita.
+
+### ¿Qué es una sesión?
+
+Una sesión almacena datos temporales para un usuario, como si ha iniciado sesión, su carrito de compras, etc.
+
+### Ejemplo en PHP
+
+```php
+<?php
+session_start();
+
+// Guardar datos
+$_SESSION['usuario'] = 'juan123';
+
+// Leer datos
+echo $_SESSION['usuario'];
+
+// Eliminar sesión
+session_destroy();
+?>
+```
+
+### Uso común
+
+- Autenticación de usuarios
+- Mostrar contenido personalizado
+- Proteger rutas restringidas
